@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles.css">
+  <title>DSE Workstation Checklist</title>
+ 
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>DSE Workstation Checklist</h1>
+    <p>Ensure your workstation complies with the Health and Safety (Display Screen Equipment) Regulations.</p>
+  </header>
+
+  <section class="checklist">
+    <form id="dse-form" onsubmit="event.preventDefault(); saveChecklist();">
+
+            <!-- 1. Display Screen -->
+<div class="section">
+<h3>1. Display Screen</h3>
+<label>
+Is the screen free from glare and reflections?
+<input type="radio" name="screen-glare" value="yes"> Yes
+<input type="radio" name="screen-glare" value="no"> No
+</label>
+<p class="info">Use a mirror to check for reflections. Move the screen or the desk if necessary.</p>
+
+<label>
+Is the screen adjustable for height and angle?
+<input type="radio" name="screen-adjustable" value="yes"> Yes
+<input type="radio" name="screen-adjustable" value="no"> No
+</label>
+<p class="info">The top of the screen should be at or just below eye level.</p>
+
+<label>
+Is the screen clean and free from dust?
+<input type="radio" name="screen-clean" value="yes"> Yes
+<input type="radio" name="screen-clean" value="no"> No
+</label>
+<p class="info">A clean screen is essential for reducing eye strain.</p>
+</div>
+
+    <!-- Keyboards Section -->
+<div class="section">
+  <h3>3. Keyboards</h3>
+
+  <label>
+    Is the keyboard separate from the screen?
+    <input type="radio" name="keyboard-separate" value="yes"> Yes
+    <input type="radio" name="keyboard-separate" value="no"> No
+  </label>
+  <p class="info">This is a requirement unless using a portable device where this is impracticable.</p>
+
+  <label>
+    Does the keyboard tilt?
+    <input type="radio" name="keyboard-tilt" value="yes"> Yes
+    <input type="radio" name="keyboard-tilt" value="no"> No
+  </label>
+  <p class="info">Tilt need not be built-in but should be available if needed.</p>
+
+  <label>
+    Is it possible to find a comfortable keying position?
+    <input type="radio" name="comfortable-keying" value="yes"> Yes
+    <input type="radio" name="comfortable-keying" value="no"> No
+  </label>
+  <p class="info">Ensure there is enough space for hands and wrists by moving the screen back if necessary. A wrist rest may be needed for thick, raised keyboards.</p>
+
+  <label>
+    Does the user have good keyboard technique?
+    <input type="radio" name="keyboard-technique" value="yes"> Yes
+    <input type="radio" name="keyboard-technique" value="no"> No
+  </label>
+  <p class="info">Training can prevent poor technique, such as hands bent at the wrist, hitting the keys too hard, or overstretching the fingers.</p>
+
+  <label>
+    Are the characters on the keyboard clear and readable?
+    <input type="radio" name="keyboard-readable" value="yes"> Yes
+    <input type="radio" name="keyboard-readable" value="no"> No
+  </label>
+  <p class="info">Ensure the keyboard is clean. If characters aren't readable, consider modifying or replacing the keyboard. A matt finish can reduce glare.</p>
+</div>
+
+<!-- Mouse, Trackball, etc. Section -->
+<div class="section">
+  <h3>4. Mouse, Trackball, etc.</h3>
+
+  <label>
+    Is the device suitable for the tasks it is used for?
+    <input type="radio" name="device-suitable" value="yes"> Yes
+    <input type="radio" name="device-suitable" value="no"> No
+  </label>
+  <p class="info">If the user is having issues, consider trying a different device. General-purpose devices like the mouse and trackball come in many shapes and sizes. For certain tasks, alternatives like touch screens may be more suitable.</p>
+
+  <label>
+    Is the device positioned close to the user?
+    <input type="radio" name="device-position" value="yes"> Yes
+    <input type="radio" name="device-position" value="no"> No
+  </label>
+  <p class="info">Position the device as close as possible to the keyboard to avoid overreaching. Training may help prevent arm strain, encourage relaxed arm and wrist posture, and remind users not to leave their hand on the device when not in use.</p>
+
+  <label>
+    Is there support for the device user's wrist and forearm?
+    <input type="radio" name="wrist-support" value="yes"> Yes
+    <input type="radio" name="wrist-support" value="no"> No
+  </label>
+  <p class="info">Support can come from the desk surface or chair arm. If not, a separate wrist or forearm support may be needed.</p>
+
+  <label>
+    Does the device work smoothly at a speed that suits the user?
+    <input type="radio" name="device-speed" value="yes"> Yes
+    <input type="radio" name="device-speed" value="no"> No
+  </label>
+  <p class="info">Check if the device needs cleaning (e.g., mouse ball or rollers), and ensure the work surface is suitable. A mouse mat may help.</p>
+
+  <label>
+    Can the user easily adjust software settings for speed and accuracy of the pointer?
+    <input type="radio" name="device-settings" value="yes"> Yes
+    <input type="radio" name="device-settings" value="no"> No
+  </label>
+  <p class="info">Users may need training to adjust settings like pointer speed and accuracy.</p>
+</div>
+
+
+<!-- 4. Software -->
+            <div class="section">
+                <h3>4. Software</h3>
+                <label>
+                    Is the software suitable for the task?
+                    <input type="radio" name="software-suitable" value="yes"> Yes
+                    <input type="radio" name="software-suitable" value="no"> No
+                </label>
+                <p class="info">Software should help minimize stress and be user-friendly.</p>
+
+                <label>
+                    Have users received appropriate training in using the software?
+                    <input type="radio" name="software-training" value="yes"> Yes
+                    <input type="radio" name="software-training" value="no"> No
+                </label>
+                <p class="info">Ensure users are familiar with the software's features.</p>
+            </div>
+
+			<!-- Furniture and Chair Section -->
+			<div class="section">
+			<h3>6. Furniture and Chair</h3>
+
+			<!-- Work Surface Space -->
+			<label>
+			Is the work surface large enough for all necessary equipment, papers, etc.?
+			<input type="radio" name="surface-space" value="yes"> Yes
+			<input type="radio" name="surface-space" value="no"> No
+			</label>
+			<p class="info">
+			If the workspace is crowded, consider moving printers and reference materials elsewhere. Rearranging power and telecom sockets may help relocate equipment. Ensure there is flexibility for rearrangement.
+			</p>
+
+			<!-- Reach of Equipment -->
+			<label>
+			Can the user comfortably reach all the equipment and papers they need to use?
+			<input type="radio" name="equipment-reach" value="yes"> Yes
+			<input type="radio" name="equipment-reach" value="no"> No
+			</label>
+			<p class="info">
+			Rearrange equipment and frequently used items to be within easy reach. A document holder might be useful to minimize uncomfortable head and eye movements.
+			</p>
+
+			<!-- Glare and Reflection on Surfaces -->
+			<label>
+			Are surfaces free from glare and reflection?
+			<input type="radio" name="surface-glare" value="yes"> Yes
+			<input type="radio" name="surface-glare" value="no"> No
+			</label>
+			<p class="info">
+			Consider using mats or blotters to reduce glare and reflections on surfaces.
+			</p>
+
+			<!-- Chair Suitability -->
+			<label>
+			Is the chair suitable?
+			<input type="radio" name="chair-suitable" value="yes"> Yes
+			<input type="radio" name="chair-suitable" value="no"> No
+			</label>
+			<p class="info">
+			The chair should be stable and allow for adjustments. If the user is uncomfortable, the chair may need repairing or replacing.
+			</p>
+	
+			<!-- Chair Stability and Adjustments -->
+			<label>
+			Does the chair have working seat back height and tilt adjustment, seat height adjustment, and castors or glides?
+			<input type="radio" name="chair-adjustments" value="yes"> Yes
+			<input type="radio" name="chair-adjustments" value="no"> No
+			</label>
+			<p class="info">
+			Ensure that the adjustment mechanisms of the chair are functional. If not, repairs or replacements may be necessary.
+			</p>
+			</div>
+
+
+
+			<!-- Environment Section -->
+			<div class="section">
+			<h3>6. Environment</h3>
+
+			<!-- Room for Movement -->
+			<label>
+			Is there enough room to change position and vary movement?
+			<input type="radio" name="movement-room" value="yes"> Yes
+			<input type="radio" name="movement-room" value="no"> No
+			</label>
+			<p class="info">
+			Ensure there is space to move, stretch, and fidget. Reorganize the office layout if necessary, and check for obstructions. Tidy up cables to avoid trip or snag hazards.
+			</p>
+
+			<!-- Lighting Suitability -->
+			<label>
+			Is the lighting suitable, e.g., not too bright or too dim to work comfortably?
+			<input type="radio" name="lighting-suitable" value="yes"> Yes
+			<input type="radio" name="lighting-suitable" value="no"> No
+			</label>
+			<p class="info">
+			Users should be able to control light levels by adjusting blinds or light switches. If necessary, consider shading or repositioning light sources or providing desk lamps, but ensure they don’t cause glare.
+			</p>
+
+			<!-- Air Comfort -->
+			<label>
+			Does the air feel comfortable?
+			<input type="radio" name="air-comfort" value="yes"> Yes
+			<input type="radio" name="air-comfort" value="no"> No
+			</label>
+			<p class="info">
+			DSE and other equipment may dry the air. Circulate fresh air, and consider adding plants or a humidifier if air discomfort is severe.
+			</p>
+
+			<!-- Heat Levels -->
+			<label>
+			Are levels of heat comfortable?
+			<input type="radio" name="heat-comfort" value="yes"> Yes
+			<input type="radio" name="heat-comfort" value="no"> No
+			</label>
+			<p class="info">
+			Consider more ventilation or air conditioning, especially if there is a lot of electronic equipment in the room. Alternatively, relocate users away from heat sources.
+			</p>
+
+			<!-- Noise Levels -->
+			<label>
+			Are levels of noise comfortable?
+			<input type="radio" name="noise-comfort" value="yes"> Yes
+			<input type="radio" name="noise-comfort" value="no"> No
+			</label>
+        <p class="info">
+          If noise is an issue, try moving sources of noise (like printers) away from users. If not possible, consider soundproofing the environment.
+        </p>
+      </div>
+
+      <input type="submit" value="Download Checklist">
+    </form>
+  </section>
+
+    <footer>
+        <p>&copy; 2024 martin petik MIT LICENSE.</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
+

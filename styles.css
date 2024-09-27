@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+section.checklist {
+    padding: 20px;
+    background-color: white;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 70px; /* Ensure space for footer */
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h3 {
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem; /* Responsive font size */
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+.action {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px; /* Increased padding for better touch targets */
+    border: none;
+    cursor: pointer;
+    font-size: 1rem; /* Responsive font size */
+    border-radius: 5px; /* Rounded corners */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    padding: 15px; /* Increased padding for a better look */
+    background-color: #333;
+    color: white;
+    position: fixed; /* Keep it fixed at the bottom */
+    bottom: 0; /* Position it at the bottom */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header, footer {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    section.checklist {
+        margin: 10px; /* Reduce margin on smaller screens */
+        padding: 15px; /* Reduce padding */
+    }
+
+    button {
+        width: 100%; /* Full width button on mobile */
+        font-size: 1.1rem; /* Slightly larger font size */
+    }
+
+    label {
+        font-size: 0.95rem; /* Slightly smaller font size */
+    }
+}
+
+/* Section Headers */
+.section h3 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
